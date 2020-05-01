@@ -1,0 +1,213 @@
+html, body, #main {
+    height: 100%;
+    scroll-snap-type: y proximity;
+}
+
+.appear {
+    transform: translateX(0);
+    transition: transform 1s ease-out;
+}
+
+#title {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("./media/ocean_compressed.jpg");
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    clear: both;
+}
+
+.parallex {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#center-title {
+    margin: auto;
+    max-width: 50%;
+    text-align: center;
+}
+
+.large-title {
+    color: white;
+    font-size: 6rem;
+    font-weight: 4;
+    letter-spacing: 25px;
+}
+
+.medium-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 2;
+    letter-spacing: 5px;
+}
+
+.smaller-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 1;
+}
+
+.small-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 1;
+    margin: 0 100px;
+}
+
+.funfact {
+    padding: 0px 7px;
+    background-color: #333333;
+    border-radius: 90px;
+    display: inline;
+    font-size: smaller;
+    font-weight: thin;
+}
+
+.black {
+    color: black;
+}
+
+.block {
+    width: 100%;
+    padding: 50px 0px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.block-item {
+    padding-top: 30px;
+    text-align: center;
+}
+
+/*
+    TWITCH
+*/
+
+#twitch-block {
+    background-image: linear-gradient(rgba(31,32,65,0.6), rgba(75,63,114,0.8)), url("./media/galaxy.jpg");
+    background-blend-mode: darken;
+    height: 100%;
+}
+.twitch-frame {
+    max-width: 1000px;
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 0px 8px 5px #ccc;
+    padding-top: 0px;
+    margin-top: 30px;
+}
+
+/* 
+    PLAYERS
+*/
+#players-block {
+    background-color: rgb(34,34,34);
+    transition: all 1ms;
+}
+.member {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-radius: 4px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+.role-icon {
+    width: 100%;
+    max-width: 200px;
+    margin: 0px 50px;
+    display: block;
+}
+
+.member-description {
+    font-style: italic;
+    color: white;
+    font-size: 1.2rem;
+    max-width: 900px;
+}
+
+.member-name {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.role-name {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+/*
+    MERCH
+*/
+
+#merch-block {
+    background-color: rgb(25, 26, 54);
+    transition: all 1ms;
+}
+
+.merch-collection {
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    width: 90%;
+    border-radius: 3px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.merch-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 30px;
+    max-width: 425px;
+}
+
+.card-img-top {
+    height: 300px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    FOOTER
+*/
+
+#footer{
+    height: 35px;
+    background-color: #272727;
+    display: flex;
+    align-content: center;
+    padding: 5px;
+    padding-left: 10px;
+    scroll-snap-align: start;
+}
+
+#footer div {
+    color:white;
+}
