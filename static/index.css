@@ -35,7 +35,12 @@ html, body, #main {
     color: white;
     font-size: 6rem;
     font-weight: 4;
-    letter-spacing: 25px;
+}
+
+@media screen and (min-width : 40em) {
+    .large-title {
+        letter-spacing: 25px;
+    }
 }
 
 .medium-title {
@@ -199,7 +204,7 @@ html, body, #main {
 */
 
 #footer{
-    height: 35px;
+    height: 40px;
     background-color: #272727;
     display: flex;
     align-content: center;
