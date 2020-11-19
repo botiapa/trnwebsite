@@ -101,6 +101,7 @@ html, body, #main {
     background-image: linear-gradient(rgba(31,32,65,0.6), rgba(75,63,114,0.8)), url("./media/galaxy.jpg");
     background-blend-mode: darken;
     height: 100%;
+	padding-top:80px;
 }
 .twitch-frame {
     max-width: 1000px;
